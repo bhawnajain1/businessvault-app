@@ -1,0 +1,2 @@
+import{r as n,c as l,N as u,g as o}from"./index-C_j78paA.js";function d(){const[a,s]=n.useState({businessId:null,deviceId:null,loading:!0,error:null});return n.useEffect(()=>{let r=!1;return(async()=>{try{const[e,i]=await Promise.all([l().catch(t=>{if(t instanceof u)return null;throw t}),o()]);if(r)return;s({businessId:e,deviceId:i,loading:!1,error:null})}catch(e){if(r)return;s({businessId:null,deviceId:null,loading:!1,error:e instanceof Error?e:new Error(String(e))})}})(),()=>{r=!0}},[]),a}export{d as u};
+//# sourceMappingURL=useActiveBusiness-BOvwQ7dE.js.map
