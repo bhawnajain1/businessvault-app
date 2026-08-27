@@ -1,0 +1,2 @@
+import{j as i}from"./index-CTnztrwi.js";function l(t,o="INR"){const r=t<0?"-":"",n=Math.abs(t),c=Math.floor(n/100),s=n%100,e=c.toLocaleString("en-IN"),a=o==="INR"?"₹":o+" ";return`${r}${a}${e}.${s.toString().padStart(2,"0")}`}function u({paise:t,currency:o="INR",className:r,showSign:n}){const c=r??(t<0?"text-rose-600":""),s=l(t,o),e=n&&t>0?`+${s}`:s;return i.jsx("span",{className:c,children:e})}export{u as M};
+//# sourceMappingURL=Money-90EHgHes.js.map

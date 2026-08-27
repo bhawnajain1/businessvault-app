@@ -1,0 +1,2 @@
+import{j as a}from"./index-CTnztrwi.js";function l(n,s=3){const t=n<0?"-":"",o=Math.abs(n),r=Math.floor(o/1e6),e=o%1e6;if(s<=0)return`${t}${r.toLocaleString("en-IN")}`;const c=e.toString().padStart(6,"0").slice(0,s);return`${t}${r.toLocaleString("en-IN")}.${c}`}function i({micros:n,decimals:s=3,unit:t,className:o}){const r=l(n,s);return a.jsxs("span",{className:o,children:[r,t?a.jsx("span",{className:"text-slate-500 ml-1",children:t}):null]})}export{i as Q,l as f};
+//# sourceMappingURL=Qty-BQjlPSjn.js.map

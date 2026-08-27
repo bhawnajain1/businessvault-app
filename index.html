@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/businessvault-app/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/businessvault-app/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="manifest" href="/businessvault-app/manifest.webmanifest" />
+    <title>BusinessVault</title>
+    <script>
+      // Pair with public/404.html — restores the deep-link path stored in ?p=/... .
+      (function () {
+        var q = window.location.search;
+        if (q && q.slice(1).indexOf('p=/') === 0) {
+          var p = q.slice(3).split('&q=');
+          var path = p[0].replace(/~and~/g, '&');
+          var query = p[1] ? '?' + p[1].replace(/~and~/g, '&') : '';
+          window.history.replaceState(null, '', window.location.pathname.replace(/\/$/, '') + path + query + window.location.hash);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/businessvault-app/assets/index-CTnztrwi.js"></script>
+    <link rel="stylesheet" crossorigin href="/businessvault-app/assets/index-DIeM6tUD.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
