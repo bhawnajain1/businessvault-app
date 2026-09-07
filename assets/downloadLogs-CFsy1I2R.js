@@ -1,0 +1,2 @@
+import{l as s,z as l}from"./index-D14y4kgA.js";async function d(t){try{s.info("logs","user requested log export",{hours:t});const o=await l(t*60*60*1e3),r=new Blob([o],{type:"application/x-ndjson"}),n=URL.createObjectURL(r),e=document.createElement("a"),a=new Date().toISOString().replace(/[:.]/g,"-");e.href=n,e.download=`businessvault-debug-${a}.jsonl`,document.body.appendChild(e),e.click(),e.remove(),URL.revokeObjectURL(n)}catch(o){s.error("logs","log export failed",{error:o})}}export{d};
+//# sourceMappingURL=downloadLogs-CFsy1I2R.js.map
