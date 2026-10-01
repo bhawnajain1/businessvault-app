@@ -1,0 +1,2 @@
+const e=["=","+","-","@","	","\r"],s=/[",\r\n]/;function o(t){return t==null?"":typeof t=="string"?t:typeof t=="number"||typeof t=="boolean"||typeof t=="bigint"?String(t):t instanceof Date?t.toISOString():String(t)}function g(t){const r=o(t);if(r.length===0)return"";let n=r;const i=n.charAt(0);return e.includes(i)&&(n="'"+n),s.test(n)||n!==n.trim()?'"'+n.replace(/"/g,'""')+'"':n}export{g as s};
+//# sourceMappingURL=sanitize-V3S54KEu.js.map
