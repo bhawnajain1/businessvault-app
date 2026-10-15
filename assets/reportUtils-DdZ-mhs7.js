@@ -1,0 +1,2 @@
+import{f as o}from"./money-BhGy7NaT.js";function i(t){return o(t)}function s(t){const n=t.getUTCFullYear(),a=String(t.getUTCMonth()+1).padStart(2,"0"),e=String(t.getUTCDate()).padStart(2,"0");return`${n}-${a}-${e}`}function u(t){if(!t)return new Date;const[n,a,e]=t.split("-").map(r=>parseInt(r,10));return new Date(Date.UTC(n,(a||1)-1,e||1))}function f(t,n=4){const a=t.getUTCMonth()+1,e=t.getUTCFullYear(),r=a>=n?e:e-1;return new Date(Date.UTC(r,n-1,1))}export{f,i as m,u as p,s as t};
+//# sourceMappingURL=reportUtils-DdZ-mhs7.js.map
